@@ -7,7 +7,7 @@ file='CRUD_D5/Data.csv'
 res=requests.get(url)
 df=pd.DataFrame(res.json())
 
-df.to_csv(file)
+df.to_csv(file,index=False)
 while True:
     id=input('Masukan id: ')
     if id:
